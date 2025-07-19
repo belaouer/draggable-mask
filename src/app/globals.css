@@ -6,9 +6,7 @@ body {
 .mask {
   mask-image: url("../../public/rect.svg");
   mask-repeat: no-repeat;
-  mask-position: 0px 50%;
-  mask-size: 420px 500px;
-  z-index: 20;
+  mask-size: 400px 100%;
 }
 
 .chevrons {

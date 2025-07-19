@@ -54,15 +54,12 @@ const App = () => {
   return (
     <div
       ref={container}
-      className="relative w-screen h-screen px-8 overflow-hidden"
+      className="relative w-screen h-screen flex justify-center items-center"
     >
-      <div
-        ref={maskRef}
-        className="mask h-full w-[80%] mx-auto  flex justify-center items-center pl-2"
-      >
+      <div id="draggable-container" className="relative w-[80%] h-[500px] ">
         <div
-          id="draggable-container"
-          className="relative w-full h-[500px] flex justify-between "
+          ref={maskRef}
+          className="mask h-full w-full mx-auto  flex justify-between items-center rounded-lg"
         >
           <div className="relative overflow-hidden rounded-lg h-full w-[400px] pointer-events-none ">
             <Image
